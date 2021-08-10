@@ -4,7 +4,6 @@ declare namespace plus {
 
     nativeUI: any;
     nativeObj: any;
-    uploader: any;
     device: {
       uuid: string;
       dial(phone: string, confirm?: boolean): void;
