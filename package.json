@@ -1,0 +1,25 @@
+{
+  "name": "plus-typings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChobitsSP/plus-typings.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChobitsSP/plus-typings/issues"
+  },
+  "files": [
+    "README.md",
+    "index.d.ts",
+    "typings.json",
+    "typings/"
+  ],
+  "homepage": "https://github.com/ChobitsSP/plus-typings#readme"
+}
