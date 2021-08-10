@@ -1,6 +1,30 @@
 declare namespace plus {
   interface PlusStatic {
     webview: PlusWebview;
+
+    nativeUI: any;
+    nativeObj: any;
+    uploader: any;
+    device: {
+      uuid: string;
+      dial(phone: string, confirm?: boolean);
+    }
+
+    share: {
+      sendWithSystem(options): void;
+    }
+
+    runtime: {
+      appid: string;
+      version: string;
+    }
+
+    /** 相机 */
+    camera: any;
+    /** 文件 */
+    io: any;
+    /** 相册 */
+    gallery: any;
   }
 
   interface PlusWebview {
