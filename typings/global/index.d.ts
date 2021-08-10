@@ -22,7 +22,6 @@ declare namespace plus {
     runtime: any;
     splashscreen: any;
     storage: any;
-    uploader: any;
 
     xhr: any;
     zip: any;
@@ -36,5 +35,6 @@ declare namespace plus {
     statistic: any;
     android: any;
     ios: any;
+    key: any;
   }
 }
