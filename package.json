@@ -1,8 +1,8 @@
 {
   "name": "plus-typings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.d.ts",
+  "main": "./index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +22,6 @@
     "tsconfig.json",
     "typings/"
   ],
+  "types": "./index.d.ts",
   "homepage": "https://github.com/ChobitsSP/plus-typings#readme"
 }
