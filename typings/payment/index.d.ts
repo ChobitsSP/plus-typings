@@ -1,4 +1,7 @@
 declare namespace plus {
+  interface PlusStatic {
+    payment: PlusPayment;
+  }
 
   interface PlusPayment {
     /**

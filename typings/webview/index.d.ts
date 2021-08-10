@@ -1,4 +1,8 @@
 declare namespace plus {
+  interface PlusStatic {
+    webview: PlusWebview;
+  }
+
   interface PlusWebview {
     /**
      * 获取当前窗口的WebviewObject对象
