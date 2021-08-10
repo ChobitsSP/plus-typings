@@ -1,3 +1,4 @@
 /// <reference path="../typings/index.d.ts" />
 
-const pp: plus.PlusStatic = null;
+const MyPlus: plus.PlusStatic = null;
+MyPlus.webview.create('');

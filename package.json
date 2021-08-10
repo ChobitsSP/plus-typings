@@ -4,6 +4,7 @@
   "description": "",
   "main": "./index.d.ts",
   "scripts": {
+    "build": "node ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +24,9 @@
     "typings/"
   ],
   "types": "./index.d.ts",
-  "homepage": "https://github.com/ChobitsSP/plus-typings#readme"
+  "homepage": "https://github.com/ChobitsSP/plus-typings#readme",
+  "devDependencies": {
+    "@types/node": "^16.4.13",
+    "axios": "^0.21.1"
+  }
 }
