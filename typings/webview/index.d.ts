@@ -75,7 +75,7 @@ declare namespace plus {
      */
     opener(): WebviewObject;
 
-    show(aniShow?: any, duration?: Number, showedCB?: Function, extras?: any): void;
+    show(aniShow?: any, duration?: number, showedCB?: Function, extras?: any): void;
 
     /**
      * 隐藏Webview窗口可保存已加载HTML页面的上下文数据，能降低应用使用的系统资源，通过show方法可将隐藏的Webview窗口显示出来。
@@ -93,6 +93,6 @@ declare namespace plus {
      */
     close(aniClose?: AnimationTypeClose, duration?: number, extras?: any): void;
 
-    evalJS(js: string): any;
+    evalJS(js: string): void;
   }
 }
