@@ -11,28 +11,28 @@ declare namespace plus {
    * https://www.dcloud.io/docs/api/index.html
    */
   interface PlusStatic {
-    // nativeUI: any;
-    // nativeObj: any;
-    // uploader: any;
-    // device: {
-    //   uuid: string;
-    //   dial(phone: string, confirm?: boolean);
-    // }
+    nativeUI: any;
+    nativeObj: any;
+    uploader: any;
+    device: {
+      uuid: string;
+      dial(phone: string, confirm?: boolean);
+    }
 
-    // share: {
-    //   sendWithSystem(options): void;
-    // }
+    share: {
+      sendWithSystem(options): void;
+    }
 
-    // runtime: {
-    //   appid: string;
-    //   version: string;
-    // }
+    runtime: {
+      appid: string;
+      version: string;
+    }
 
-    // /** 相机 */
-    // camera: any;
-    // /** 文件 */
-    // io: any;
-    // /** 相册 */
-    // gallery: any;
+    /** 相机 */
+    camera: any;
+    /** 文件 */
+    io: any;
+    /** 相册 */
+    gallery: any;
   }
 }
