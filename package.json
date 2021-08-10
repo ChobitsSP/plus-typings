@@ -19,6 +19,7 @@
     "README.md",
     "index.d.ts",
     "typings.json",
+    "tsconfig.json",
     "typings/"
   ],
   "homepage": "https://github.com/ChobitsSP/plus-typings#readme"

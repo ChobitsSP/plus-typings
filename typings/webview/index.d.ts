@@ -7,11 +7,11 @@ declare namespace plus {
     uploader: any;
     device: {
       uuid: string;
-      dial(phone: string, confirm?: boolean);
+      dial(phone: string, confirm?: boolean): void;
     }
 
     share: {
-      sendWithSystem(options): void;
+      sendWithSystem(options: any): void;
     }
 
     runtime: {
@@ -84,7 +84,7 @@ declare namespace plus {
      * @param duration
      * @param extras
      */
-    hide(aniHide?: AnimationTypeClose, duration?: number, extras?): void;
+    hide(aniHide?: AnimationTypeClose, duration?: number, extras?: any): void;
 
     /**
      * 关闭并销毁Webview窗口，可设置关闭动画和动画持续时间。
@@ -92,8 +92,8 @@ declare namespace plus {
      * @param duration 关闭Webview窗口的动画持续时间
      * @param extras 关闭Webview窗口扩展参数
      */
-    close(aniClose?: AnimationTypeClose, duration?: number, extras?): void;
+    close(aniClose?: AnimationTypeClose, duration?: number, extras?: any): void;
 
-    evalJS(js: string);
+    evalJS(js: string): any;
   }
 }
