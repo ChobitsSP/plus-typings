@@ -1,28 +1,26 @@
 declare namespace plus {
   interface PlusStatic {
-    payment: PlusPayment;
-  }
+    payment: {
+      /**
+       * 请求支付操作
+       * @param {*} channel 指定支付操作的通道，通过getChannels接口获取。
+       * @param {*} statement 支付订单信息，由支付通道定义的数据格式，通常是由业务服务器生成或向支付服务器获取，是经过加密的字符串信息。
+       * @param {*} successCB 请求支付成功时触发，用于返回支付结果。
+       * @param {*} errorCB 请求支付失败时触发，用于返回错误信息。
+       * @memberof PlusPayment
+       */
+      request(
+        channel: PaymentChannel,
+        statement: string | object,
+        successCB: PaymentSuccessCallback,
+        errorCB: PaymentErrorCallback
+      );
 
-  interface PlusPayment {
-    /**
-     * 请求支付操作
-     * @param {*} channel 指定支付操作的通道，通过getChannels接口获取。
-     * @param {*} statement 支付订单信息，由支付通道定义的数据格式，通常是由业务服务器生成或向支付服务器获取，是经过加密的字符串信息。
-     * @param {*} successCB 请求支付成功时触发，用于返回支付结果。
-     * @param {*} errorCB 请求支付失败时触发，用于返回错误信息。
-     * @memberof PlusPayment
-     */
-    request(
-      channel: PaymentChannel,
-      statement: string | object,
-      successCB: PaymentSuccessCallback,
-      errorCB: PaymentErrorCallback
-    );
-
-    /**
-     * 获取支付通道
-     */
-    getChannels(successCB: ChannelsSuccessCallback, errorCB);
+      /**
+       * 获取支付通道
+       */
+      getChannels(successCB: ChannelsSuccessCallback, errorCB: PaymentErrorCallback);
+    };
   }
 
   interface PaymentReqResult {

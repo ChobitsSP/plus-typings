@@ -23,7 +23,6 @@ declare namespace plus {
     splashscreen: any;
     storage: any;
 
-    xhr: any;
     zip: any;
     barcode: any;
     maps: any;
@@ -31,6 +30,7 @@ declare namespace plus {
 
     share: any;
     speech: any;
+    sqlite: any;
     statistic: any;
     android: any;
     ios: any;
