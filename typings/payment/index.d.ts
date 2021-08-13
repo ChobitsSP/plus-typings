@@ -54,9 +54,9 @@ declare namespace plus {
   }
 
   interface PaymentChannel {
-    id: string;
-    description: string;
-    serviceReady: boolean;
+    readonly id: string;
+    readonly description: string;
+    readonly serviceReady: boolean;
     installService();
 
     // iOS iAP

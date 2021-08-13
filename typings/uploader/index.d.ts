@@ -16,12 +16,12 @@ declare namespace plus {
 
   interface Upload {
     id: string;
-    url: string;
-    state: number;
-    options: any;
-    responseText: string;
-    uploadedSize: number;
-    totalSize: number;
+    readonly  url: string;
+    readonly state: number;
+    readonly options: any;
+    readonly responseText: string;
+    readonly uploadedSize: number;
+    readonly totalSize: number;
 
     addFile(path, options): boolean;
     addData(key, value): boolean;
