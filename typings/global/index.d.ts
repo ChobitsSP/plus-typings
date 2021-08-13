@@ -29,7 +29,6 @@ declare namespace plus {
     maps: any;
     oauth: any;
 
-    push: any;
     share: any;
     speech: any;
     statistic: any;

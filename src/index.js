@@ -9,3 +9,27 @@ async function GetNames() {
 }
 
 GetNames();
+
+
+
+
+class safasfasdf {
+  constructor() {
+    this.url = 'https://www.html5plus.org/doc/zh_cn/contacts.html';
+  }
+
+  
+
+
+  GetMethods() {
+
+  }
+
+  GetVars() {
+
+  }
+
+  GetEvents() {
+
+  }
+}
