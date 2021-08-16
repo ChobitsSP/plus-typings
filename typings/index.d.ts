@@ -11,6 +11,7 @@
 /// <reference path="./runtime/index.d.ts" />
 /// <reference path="./uploader/index.d.ts" />
 /// <reference path="./webview/index.d.ts" />
+/// <reference path="./zip/index.d.ts" />
 
 // declare const plus: plus.PlusStatic;
 
@@ -32,7 +33,6 @@ declare namespace plus {
     splashscreen: any;
     storage: any;
 
-    zip: any;
     maps: any;
     oauth: any;
 
