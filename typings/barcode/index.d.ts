@@ -17,10 +17,20 @@ declare namespace plus {
       readonly UPCE: 6;
       /** Codabar条形码 */
       readonly CODABAR: 7;
+      /** Code39条形码 */
+      readonly CODE39: 8;
+      /** Code93条形码 */
+      readonly CODE93: 9;
+      /** Code128条形码 */
+      readonly CODE128: 10;
       /** ITF条形码 */
       readonly ITF: 11;
       /** MaxiCode二维码 */
       readonly MAXICODE: 12;
+      /** PDF 417二维条码 */
+      readonly PDF417: 13;
+      /** RSS 14条形组合码 */
+      readonly RSS14: 14;
       /** 扩展式RSS条形组合码 */
       readonly RSSEXPANDED: 15;
 
