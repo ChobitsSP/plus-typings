@@ -1,3 +1,4 @@
+/// <reference path="./barcode/index.d.ts" />
 /// <reference path="./contacts/index.d.ts" />
 /// <reference path="./gallery/index.d.ts" />
 /// <reference path="./messaging/index.d.ts" />
@@ -34,7 +35,6 @@ declare namespace plus {
     storage: any;
 
     zip: any;
-    barcode: any;
     maps: any;
     oauth: any;
 
