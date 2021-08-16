@@ -1,4 +1,5 @@
 /// <reference path="./barcode/index.d.ts" />
+/// <reference path="./camera/index.d.ts" />
 /// <reference path="./contacts/index.d.ts" />
 /// <reference path="./gallery/index.d.ts" />
 /// <reference path="./messaging/index.d.ts" />
@@ -18,9 +19,6 @@ declare namespace plus {
     accelerometer: any;
     audio: any;
     cache: any;
-    camera: {
-      getCamera(index: number): any;
-    };
     device: any;
     downloader: any;
     geolocation: any;
