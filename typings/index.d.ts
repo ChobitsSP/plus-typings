@@ -4,6 +4,7 @@
 /// <reference path="./gallery/index.d.ts" />
 /// <reference path="./io/index.d.ts" />
 /// <reference path="./messaging/index.d.ts" />
+/// <reference path="./nativeUI/index.d.ts" />
 /// <reference path="./net/index.d.ts" />
 /// <reference path="./payment/index.d.ts" />
 /// <reference path="./push/index.d.ts" />
@@ -24,7 +25,6 @@ declare namespace plus {
     downloader: any;
     geolocation: any;
     nativeObj: any;
-    nativeUI: any;
     navigator: any;
     orientation: any;
     proximity: any;
