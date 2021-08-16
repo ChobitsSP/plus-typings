@@ -23,7 +23,6 @@ declare namespace plus {
     downloader: any;
     gallery: any;
     geolocation: any;
-    interface: any;
     io: any;
     nativeObj: any;
     nativeUI: any;
