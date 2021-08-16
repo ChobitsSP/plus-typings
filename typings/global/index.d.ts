@@ -3,7 +3,9 @@ declare namespace plus {
     accelerometer: any;
     audio: any;
     cache: any;
-    camera: any;
+    camera: {
+      getCamera(index: number): any;
+    };
     console: any;
     contacts: any;
     device: any;
