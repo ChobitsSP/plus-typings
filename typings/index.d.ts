@@ -18,7 +18,6 @@ declare namespace plus {
     camera: {
       getCamera(index: number): any;
     };
-    console: any;
     contacts: any;
     device: any;
     downloader: any;
@@ -47,5 +46,10 @@ declare namespace plus {
     android: any;
     ios: any;
     key: any;
+  }
+
+  interface Exception {
+    code: number;
+    message: string;
   }
 }
