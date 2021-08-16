@@ -13,7 +13,6 @@ declare namespace plus {
     geolocation: any;
     interface: any;
     io: any;
-    messaging: any;
     nativeObj: any;
     nativeUI: any;
     navigator: any;
