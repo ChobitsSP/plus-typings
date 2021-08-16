@@ -1,10 +1,12 @@
 declare namespace plus {
   interface PlusStatic {
     net: {
-      XMLHttpRequest: XMLHttpRequest
+      XMLHttpRequest: plus.net.XMLHttpRequest
     };
   }
+}
 
+declare namespace plus.net {
   enum XhrReadyState {
     /**
      * 未初始化状态。XMLHttpRequest对象已创建或已被abort()方法重置。 
