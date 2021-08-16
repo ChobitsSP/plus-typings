@@ -9,6 +9,7 @@
 /// <reference path="./payment/index.d.ts" />
 /// <reference path="./push/index.d.ts" />
 /// <reference path="./runtime/index.d.ts" />
+/// <reference path="./share/index.d.ts" />
 /// <reference path="./storage/index.d.ts" />
 /// <reference path="./uploader/index.d.ts" />
 /// <reference path="./webview/index.d.ts" />
@@ -36,7 +37,6 @@ declare namespace plus {
     maps: any;
     oauth: any;
 
-    share: any;
     speech: any;
     sqlite: any;
     statistic: any;
