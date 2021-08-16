@@ -9,11 +9,11 @@ declare namespace plus {
       getAllKeys(): string[];
       getAllKeysAsync(successCB, errorCB?: plus.storage.ErrorCallback);
       getLength(): number;
-      getItem<T = any>(key: string): T;
+      getItem(key: string): string;
       getItemAsync(key: string, successCB, errorCB?: plus.storage.ErrorCallback);
       key(index: number): string;
-      setItem(key: string, value: any);
-      setItemAsync(key: string, value: any, successCB, errorCB?: plus.storage.ErrorCallback);
+      setItem(key: string, value: string);
+      setItemAsync(key: string, value: string, successCB, errorCB?: plus.storage.ErrorCallback);
       removeItem(key: string);
       removeItemAsync(key: string, successCB, errorCB?: plus.storage.ErrorCallback);
     };
