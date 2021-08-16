@@ -1,5 +1,8 @@
 declare namespace plus {
   interface PlusStatic {
+    /**
+     * https://www.html5plus.org/doc/zh_cn/uploader.html
+     */
     uploader: {
       /**
        * 请求上传管理创建新的上传任务，创建成功则返回Upload对象，用于管理上传任务。

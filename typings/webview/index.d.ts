@@ -1,5 +1,8 @@
 declare namespace plus {
   interface PlusStatic {
+    /**
+     * https://www.html5plus.org/doc/zh_cn/webview.html
+     */
     webview: {
       all(): plus.webview.WebviewObject[];
 

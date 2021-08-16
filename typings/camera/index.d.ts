@@ -1,5 +1,8 @@
 declare namespace plus {
   interface PlusStatic {
+    /**
+     * https://www.html5plus.org/doc/zh_cn/camera.html
+     */
     camera: {
       /**
        * 获取需要操作的摄像头对象，如果要进行拍照或摄像操作，需先通过此方法获取摄像头对象。

@@ -1,6 +1,9 @@
 
 declare namespace plus {
   interface PlusStatic {
+    /**
+     * https://www.html5plus.org/doc/zh_cn/push.html
+     */
     push: {
       /**
        * 添加推送消息事件监听器，当指定推送事件发出时触发。

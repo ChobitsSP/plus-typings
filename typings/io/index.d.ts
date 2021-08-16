@@ -1,5 +1,8 @@
 declare namespace plus {
   interface PlusStatic {
+    /**
+     * https://www.html5plus.org/doc/zh_cn/io.html
+     */
     io: {
       readonly PRIVATE_WWW: 1;
       readonly PRIVATE_DOC: 2;

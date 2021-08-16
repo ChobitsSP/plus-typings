@@ -1,5 +1,8 @@
 declare namespace plus {
   interface PlusStatic {
+    /**
+     * https://www.html5plus.org/doc/zh_cn/storage.html
+     */
     runtime: {
       readonly appid: string;
       readonly arguments: string;

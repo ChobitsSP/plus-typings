@@ -1,5 +1,8 @@
 declare namespace plus {
   interface PlusStatic {
+    /**
+     * https://www.html5plus.org/doc/zh_cn/barcode.html
+     */
     barcode: {
       /** QR二维码 */
       readonly QR: 0;

@@ -1,5 +1,8 @@
 declare namespace plus {
   interface PlusStatic {
+    /**
+     * https://www.html5plus.org/doc/zh_cn/messaging.html
+     */
     messaging: {
       readonly TYPE_SMS: 1;
       readonly TYPE_MMS: 2;

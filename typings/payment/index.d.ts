@@ -1,5 +1,8 @@
 declare namespace plus {
   interface PlusStatic {
+    /**
+     * https://www.html5plus.org/doc/zh_cn/payment.html
+     */
     payment: {
       /**
        * 请求支付操作

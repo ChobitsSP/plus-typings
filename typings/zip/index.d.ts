@@ -1,5 +1,8 @@
 declare namespace plus {
   interface PlusStatic {
+    /**
+     * https://www.html5plus.org/doc/zh_cn/zip.html
+     */
     zip: {
       /**
        * 压缩生成Zip文件

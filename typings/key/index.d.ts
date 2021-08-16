@@ -1,5 +1,8 @@
 declare namespace plus {
   interface PlusStatic {
+    /**
+     * https://www.html5plus.org/doc/zh_cn/key.html
+     */
     key: {
       addEventListener(keyevent: plus.key.KeyType, listener: plus.key.KeyEventCallback, capture?: boolean);
       hideSoftKeybord();

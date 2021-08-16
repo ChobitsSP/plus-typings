@@ -1,5 +1,8 @@
 declare namespace plus {
   interface PlusStatic {
+    /**
+     * https://www.html5plus.org/doc/zh_cn/nativeui.html
+     */
     nativeUI: {
       actionSheet(actionsheetStyle: plus.nativeUI.ActionSheetStyles, actionsheetCallback?: plus.nativeUI.ActionSheetCallback): plus.nativeUI.NativeUIObj;
       alert(message: string, alertCB: plus.nativeUI.IndexCallback, title: string, buttonCapture: string);

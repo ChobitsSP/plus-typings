@@ -1,5 +1,8 @@
 declare namespace plus {
   interface PlusStatic {
+    /**
+     * https://www.html5plus.org/doc/zh_cn/contacts.html
+     */
     contacts: {
       readonly ADDRESSBOOK_PHONE: 0;
       readonly ADDRESSBOOK_SIM: 1;
