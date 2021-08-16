@@ -1,26 +1,28 @@
 declare namespace plus {
   interface PlusStatic {
-    /**
-     * 压缩生成Zip文件
-     * @param src 要压缩的源文件路径，支持文件路径或目录
-     * @param zipfile 压缩后保存的Zip文件路径
-     * @param successCB 压缩Zip文件操作成功回调，在压缩操作成功时调用
-     * @param errorCB 压缩Zip文件操作失败回调，在压缩操作失败时调用
-     */
-    compress(src: string, zipfile: string, successCB?: plus.zip.ZipSuccessCallback, errorCB?: plus.zip.ErrorCallback);
+    zip: {
+      /**
+       * 压缩生成Zip文件
+       * @param src 要压缩的源文件路径，支持文件路径或目录
+       * @param zipfile 压缩后保存的Zip文件路径
+       * @param successCB 压缩Zip文件操作成功回调，在压缩操作成功时调用
+       * @param errorCB 压缩Zip文件操作失败回调，在压缩操作失败时调用
+       */
+      compress(src: string, zipfile: string, successCB?: plus.zip.ZipSuccessCallback, errorCB?: plus.zip.ErrorCallback);
 
-    decompress(zipfile: string, target: string, successCB?, errorCB?: plus.zip.ErrorCallback);
+      decompress(zipfile: string, target: string, successCB?, errorCB?: plus.zip.ErrorCallback);
 
-    /**
-     * 图片压缩转换
-     * 可用于图片的质量压缩、大小缩放、方向旋转、区域裁剪、格式转换等。
-     * @param options 
-     * @param successCB 
-     * @param errorCB 
-     */
-    compressImage(options: plus.zip.CompressImageOptions, successCB?: plus.zip.CompressImageSuccessCallback, errorCB?: plus.zip.ErrorCallback);
+      /**
+       * 图片压缩转换
+       * 可用于图片的质量压缩、大小缩放、方向旋转、区域裁剪、格式转换等。
+       * @param options 
+       * @param successCB 
+       * @param errorCB 
+       */
+      compressImage(options: plus.zip.CompressImageOptions, successCB?: plus.zip.CompressImageSuccessCallback, errorCB?: plus.zip.ErrorCallback);
 
-    compressVideo(options, successCB?, errorCB?: plus.zip.ErrorCallback);
+      compressVideo(options, successCB?, errorCB?: plus.zip.ErrorCallback);
+    }
   }
 }
 
