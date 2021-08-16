@@ -46,12 +46,20 @@ declare namespace plus {
       create(id: string, filters?: number[], styles?: plus.barcode.BarcodeStyles, autoDecodeCharset?: boolean): plus.barcode.Barcode;
 
       getBarcodeById(id: string): plus.barcode.Barcode;
+
+      Barcode: plus.barcode.Barcode;
     };
   }
 }
 
 declare namespace plus.barcode {
   interface Barcode {
+    /**
+     * 构造扫码识别控件
+     * 创建扫码识别控件，并绑定当前Webview窗口指定id的DOM标签（如div或object等），覆盖在DOM元素上方并显示。 此时styles参数中的left/top/width/height属性值将被忽略，通过DOM标签来确定扫码识别控件的位置及大小。 注意：uni-app项目不能通过此方法创建扫码识别控件，应该使用plus.barcode.create方法创建。
+     */
+    new(domId: string, filters?: number[], styles?: BarcodeStyles, autoDecodeCharset?: boolean): Barcode;
+
     cancel(): void;
     close(): void;
     setFlash(open: boolean): void;

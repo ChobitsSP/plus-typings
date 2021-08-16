@@ -1,7 +1,15 @@
 /// <reference path="../typings/index.d.ts" />
 
 const MyPlus: plus.PlusStatic = null;
-MyPlus.webview.create('');
+function Test1() {
+  const plus = MyPlus;
+  plus.webview.create('');
+
+  const barcode = new plus.barcode.Barcode('id1');
+  barcode.onmarked = function (type, result) {
+
+  }
+}
 
 function XhrTest<T>(url: string, method: "POST" | "GET", body) {
   const plus = MyPlus;
