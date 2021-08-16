@@ -41,7 +41,7 @@ declare namespace plus {
        * @param successCB 
        * @param errorCB 
        * @param filters 条码类型常量数组，默认情况支持QR、EAN13、EAN8类型。 通过此参数可设置扫码识别支持的条码类型（注意：设置支持的条码类型越多，扫描识别速度可能将会降低）。
-       * @param autoDecodeCharset 
+       * @param autoDecodeCharset 自动解码字符集 false - 将二维码解码数据当做utf-8字符集处理，对于非utf-8字符集数据可能会出现乱码 true - 自动检测二维码解码数据，兼容处理utf-8、GBK、Big5编码格式的字符
        */
       scan(path: string, successCB: plus.barcode.BarcodeSuccessCallback, errorCB: plus.barcode.ErrorCallback, filters?: number[], autoDecodeCharset?: boolean): void;
 
