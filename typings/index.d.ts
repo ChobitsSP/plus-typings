@@ -1,3 +1,4 @@
+/// <reference path="./contacts/index.d.ts" />
 /// <reference path="./messaging/index.d.ts" />
 /// <reference path="./net/index.d.ts" />
 /// <reference path="./payment/index.d.ts" />
@@ -18,7 +19,6 @@ declare namespace plus {
     camera: {
       getCamera(index: number): any;
     };
-    contacts: any;
     device: any;
     downloader: any;
     gallery: any;
@@ -51,4 +51,6 @@ declare namespace plus {
     code: number;
     message: string;
   }
+
+  type ErrorCallback = (err: Exception) => void;
 }
