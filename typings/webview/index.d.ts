@@ -1,7 +1,7 @@
 declare namespace plus {
   interface PlusStatic {
     webview: {
-      all(): WebviewObject[];
+      all(): plus.webview.WebviewObject[];
 
       /**
        * 关闭已经打开的Webview窗口，需先获取窗口对象或窗口id，并可指定关闭窗口的动画及动画持续时间。
@@ -10,23 +10,23 @@ declare namespace plus {
        * @param duration 关闭Webview窗口动画的持续时间 单位为ms，如果没有设置则使用显示窗口动画时间。
        * @param extras 关闭Webview窗口扩展参数
        */
-      close(id_wvobj: string | WebviewObject, aniClose?: AnimationTypeClose, duration?: number, extras?: any): void;
+      close(id_wvobj: string | plus.webview.WebviewObject, aniClose?: plus.webview.AnimationTypeClose, duration?: number, extras?: any): void;
 
-      create(url?: string, id?: string, styles?: any, extras?: object): WebviewObject;
+      create(url?: string, id?: string, styles?: any, extras?: object): plus.webview.WebviewObject;
 
       /**
        * 获取当前窗口的WebviewObject对象
        */
-      currentWebview(): WebviewObject;
+      currentWebview(): plus.webview.WebviewObject;
 
-      getDisplayWebview(): WebviewObject[];
+      getDisplayWebview(): plus.webview.WebviewObject[];
 
-      getWebviewById(id: string): WebviewObject;
+      getWebviewById(id: string): plus.webview.WebviewObject;
 
       /**
        * 获取应用首页WebviewObject窗口对象
        */
-      getLaunchWebview(): WebviewObject;
+      getLaunchWebview(): plus.webview.WebviewObject;
 
       /**
        * 获取应用第二个首页WebviewObject窗口对象
@@ -35,14 +35,14 @@ declare namespace plus {
        * 通过getLaunchWebview()可获取第一个首页窗口对象，
        * 通过getSecondWebview()可获取第二个首页窗口对象。
        */
-      getSecondWebview(): WebviewObject;
+      getSecondWebview(): plus.webview.WebviewObject;
 
       /**
        * 获取应用显示栈顶的WebviewObject窗口对象
        */
-      getTopWebview(): WebviewObject;
+      getTopWebview(): plus.webview.WebviewObject;
 
-      hide(id_wvobj: string | WebviewObject, aniClose?: AnimationTypeClose, duration?: number, extras?: any): void;
+      hide(id_wvobj: string | plus.webview.WebviewObject, aniClose?: plus.webview.AnimationTypeClose, duration?: number, extras?: any): void;
 
       open(url, id, styles, aniShow, duration, showedCB);
 
@@ -55,9 +55,11 @@ declare namespace plus {
       startAnimation(options, otherOptions, callback);
 
       defaultHardwareAccelerated(): boolean;
-    };
+    }
   }
+}
 
+declare namespace plus.webview {
   type AnimationTypeClose = "auto" | "none" | "slide-out-right";
 
   interface WebviewObject {

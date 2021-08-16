@@ -1,8 +1,6 @@
+
 declare namespace plus {
   interface PlusStatic {
-    /**
-     * Push模块管理推送消息功能，可以实现在线、离线的消息推送，通过plus.push可获取推送消息管理对象。
-     */
     push: {
       /**
        * 添加推送消息事件监听器，当指定推送事件发出时触发。
@@ -10,7 +8,7 @@ declare namespace plus {
        * @param listener 事件监听器回调函数，在接收到推送消息时调用
        * @param capture 是否捕获事件，此处可忽略
        */
-      addEventListener(type: "click" | "receive", listener: PushReceiveCallback, capture?: boolean): void;
+      addEventListener(type: "click" | "receive", listener: plus.push.PushReceiveCallback, capture?: boolean): void;
 
       /**
        * 清空系统消息中心所有的推送消息。
@@ -23,20 +21,22 @@ declare namespace plus {
        * @param payload 消息承载的数据，可根据业务逻辑自定义数据格式。
        * @param option 创建消息的额外参数，参考MessageOptions。
        */
-      createMessage(content: string, payload?: string, option?: MessageOptions): void;
+      createMessage(content: string, payload?: string, option?: plus.push.MessageOptions): void;
 
       /**
        * 获取所有推送消息
        * 获取客户端接收到的所有推送消息。 仅包括在系统消息中心显示的推送消息，不包括调用setAutoNotification(false)方法设置不显示推送消息后接收到的消息。
        */
-      getAllMessage(): PushMessage[];
+      getAllMessage(): plus.push.PushMessage[];
       getClientInfo(): any;
       getClientInfoAsync(successCB, errorCB): void;
       setAutoNotification(notify: boolean): void;
-      remove(message: PushMessage): void;
-    }
+      remove(message: plus.push.PushMessage): void;
+    };
   }
+}
 
+declare namespace plus.push {
   interface MessageOptions {
     /**
      * 仅在流应用环境中有效，默认值为当前流应用的appid。

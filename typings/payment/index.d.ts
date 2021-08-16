@@ -10,19 +10,21 @@ declare namespace plus {
        * @memberof PlusPayment
        */
       request(
-        channel: PaymentChannel,
+        channel: plus.payment.PaymentChannel,
         statement: string | object,
-        successCB: PaymentSuccessCallback,
-        errorCB: PaymentErrorCallback
+        successCB: plus.payment.PaymentSuccessCallback,
+        errorCB: plus.payment.PaymentErrorCallback
       );
 
       /**
        * 获取支付通道
        */
-      getChannels(successCB: ChannelsSuccessCallback, errorCB: PaymentErrorCallback);
+      getChannels(successCB: plus.payment.ChannelsSuccessCallback, errorCB: plus.payment.PaymentErrorCallback);
     };
   }
+}
 
+declare namespace plus.payment {
   interface PaymentReqResult {
     result: string;
   }
