@@ -2,6 +2,7 @@
 /// <reference path="./camera/index.d.ts" />
 /// <reference path="./contacts/index.d.ts" />
 /// <reference path="./gallery/index.d.ts" />
+/// <reference path="./io/index.d.ts" />
 /// <reference path="./messaging/index.d.ts" />
 /// <reference path="./net/index.d.ts" />
 /// <reference path="./payment/index.d.ts" />
@@ -22,7 +23,6 @@ declare namespace plus {
     device: any;
     downloader: any;
     geolocation: any;
-    io: any;
     nativeObj: any;
     nativeUI: any;
     navigator: any;
