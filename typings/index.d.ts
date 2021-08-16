@@ -6,7 +6,7 @@
 /// <reference path="./uploader/index.d.ts" />
 /// <reference path="./webview/index.d.ts" />
 
-declare const plus: plus.PlusStatic;
+// declare const plus: plus.PlusStatic;
 
 declare namespace plus {
   /**
