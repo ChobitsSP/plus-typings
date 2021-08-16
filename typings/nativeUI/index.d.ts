@@ -26,9 +26,9 @@ declare namespace plus.nativeUI {
   }
 
   interface ActionButtonStyles {
-    color: string;
+    color?: string;
     title: string;
-    style: "destructive" | "default";
+    style?: "destructive" | "default";
   }
 
   /**
