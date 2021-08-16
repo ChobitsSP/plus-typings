@@ -3,6 +3,7 @@
 /// <reference path="./contacts/index.d.ts" />
 /// <reference path="./gallery/index.d.ts" />
 /// <reference path="./io/index.d.ts" />
+/// <reference path="./key/index.d.ts" />
 /// <reference path="./messaging/index.d.ts" />
 /// <reference path="./nativeUI/index.d.ts" />
 /// <reference path="./net/index.d.ts" />
@@ -24,7 +25,6 @@ declare namespace plus {
   interface PlusStatic {
     accelerometer: any;
     audio: any;
-    cache: any;
     device: any;
     downloader: any;
     geolocation: any;
@@ -42,7 +42,6 @@ declare namespace plus {
     statistic: any;
     android: any;
     ios: any;
-    key: any;
   }
 
   interface Exception {
