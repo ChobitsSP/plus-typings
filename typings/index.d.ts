@@ -8,6 +8,7 @@
 /// <reference path="./net/index.d.ts" />
 /// <reference path="./payment/index.d.ts" />
 /// <reference path="./push/index.d.ts" />
+/// <reference path="./runtime/index.d.ts" />
 /// <reference path="./uploader/index.d.ts" />
 /// <reference path="./webview/index.d.ts" />
 
@@ -28,7 +29,6 @@ declare namespace plus {
     navigator: any;
     orientation: any;
     proximity: any;
-    runtime: any;
     splashscreen: any;
     storage: any;
 
