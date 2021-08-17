@@ -84,6 +84,15 @@ declare namespace plus {
 
 declare namespace plus.webview {
   type AnimationTypeClose = "auto" | "none" | "slide-out-right";
-
-
+  type AnimationTypeShow =
+    "auto" |
+    "none" |
+    "slide-in-right" |
+    "slide-in-left" |
+    "slide-in-top" |
+    "slide-in-bottom" |
+    "fade-in" |
+    "zoom-out" |
+    "zoom-fade-out" |
+    "pop-in";
 }
