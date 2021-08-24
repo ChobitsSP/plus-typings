@@ -1,6 +1,7 @@
 /// <reference path="./barcode/index.d.ts" />
 /// <reference path="./camera/index.d.ts" />
 /// <reference path="./contacts/index.d.ts" />
+/// <reference path="./device/index.d.ts" />
 /// <reference path="./gallery/index.d.ts" />
 /// <reference path="./io/index.d.ts" />
 /// <reference path="./key/index.d.ts" />
@@ -25,7 +26,6 @@ declare namespace plus {
   interface PlusStatic {
     accelerometer: any;
     audio: any;
-    device: any;
     downloader: any;
     geolocation: any;
     nativeObj: any;
