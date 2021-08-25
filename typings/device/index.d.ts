@@ -1,6 +1,7 @@
 declare namespace plus {
   interface PlusStatic {
     /**
+     * Device模块管理设备信息，用于获取手机设备的相关信息，如IMEI、IMSI、型号、厂商等。通过plus.device获取设备信息管理对象。
      * https://www.html5plus.org/doc/zh_cn/device.html
      */
     device: {
@@ -82,6 +83,95 @@ declare namespace plus {
        * @param milliseconds 设备振动持续的时间 数值类型，单位为ms，默认为500ms。
        */
       vibrate(milliseconds?: number);
+    };
+
+    /**
+     * Screen模块管理设备屏幕信息
+     * https://www.html5plus.org/doc/zh_cn/device.html#plus.screen
+     */
+    screen: {
+      readonly dpiX: string;
+      readonly dpiY: string;
+      readonly height: number;
+      readonly width: number;
+      readonly resolutionHeight: number;
+      readonly resolutionWidth: number;
+      readonly scale: number;
+      setBrightness(brightness: number);
+      getBrightness(): number;
+      getCurrentSize(): { height, width, resolutionHeight, resolutionWidth };
+
+      /**
+       * 锁定屏幕方向
+       * @param orientation 要锁定的屏幕方向值 锁定屏幕方向可取以下值： "portrait-primary": 竖屏正方向； "portrait-secondary": 竖屏反方向，屏幕正方向按顺时针旋转180°； "landscape-primary": 横屏正方向，屏幕正方向按顺时针旋转90°； "landscape-secondary": 横屏方向，屏幕正方向按顺时针旋转270°； "portrait": 竖屏正方向或反方向，根据设备重力感应器自动调整； "landscape": 横屏正方向或反方向，根据设备重力感应器自动调整；
+       */
+      lockOrientation(orientation: string): void;
+
+      /**
+       * 解除锁定屏幕方向
+       */
+      unlockOrientation(): void;
+    };
+
+    /**
+     * Display模块管理应用可使用的显示区域信息
+     * https://www.html5plus.org/doc/zh_cn/device.html#plus.display
+     */
+    display: {
+      readonly resolutionHeight: number;
+      readonly resolutionWidth: number;
+    };
+
+    /**
+     * networkinfo模块用于获取网络信息
+     * https://www.html5plus.org/doc/zh_cn/device.html#plus.networkinfo
+     */
+    networkinfo: {
+      readonly CONNECTION_UNKNOW: 0;
+      readonly CONNECTION_NONE: 1;
+      readonly CONNECTION_ETHERNET: 2;
+      readonly CONNECTION_WIFI: 3;
+      readonly CONNECTION_CELL2G: 4;
+      readonly CONNECTION_CELL3G: 5;
+      readonly CONNECTION_CELL4G: 6;
+
+      /**
+       * 获取当前设备连接的网络类型，返回值为网络类型常量，可取值CONNECTION_*常量。
+       */
+      getCurrentType(): number;
+
+      /**
+       * 获取当前网络是否设置代理
+       */
+      isSetProxy(): boolean;
+    };
+
+    /**
+     * OS模块管理操作系统信息
+     * https://www.html5plus.org/doc/zh_cn/device.html#plus.os
+     */
+    os: {
+      /** 
+       * 系统语言信息
+       * 获取当前操作系统设置的系统语言，字符串类型数据，格式为"语言-地区"，如"zh-CN"表示语言为简体中文、地区为中国大陆。
+       */
+      readonly language: string;
+
+      /**
+       * 获取当前操作系统的名称，字符串类型数据。Android or iOS
+       */
+      readonly name: string;
+
+      /**
+       * 系统的供应商信息 Google or Apple
+       */
+      readonly vendor: string;
+
+      /**
+       * 系统版本信息
+       * 获取当前操作系统的版本信息，字符串类型数据。
+       */
+      readonly version: string;
     };
   }
 }
