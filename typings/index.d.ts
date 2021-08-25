@@ -5,6 +5,7 @@
 /// <reference path="./gallery/index.d.ts" />
 /// <reference path="./io/index.d.ts" />
 /// <reference path="./key/index.d.ts" />
+/// <reference path="./maps/index.d.ts" />
 /// <reference path="./messaging/index.d.ts" />
 /// <reference path="./nativeUI/index.d.ts" />
 /// <reference path="./net/index.d.ts" />
@@ -34,7 +35,6 @@ declare namespace plus {
     proximity: any;
     splashscreen: any;
 
-    maps: any;
     oauth: any;
 
     speech: any;
