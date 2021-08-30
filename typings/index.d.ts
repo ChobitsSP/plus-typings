@@ -1,4 +1,5 @@
 /// <reference path="./barcode/index.d.ts" />
+/// <reference path="./cache/index.d.ts" />
 /// <reference path="./camera/index.d.ts" />
 /// <reference path="./contacts/index.d.ts" />
 /// <reference path="./device/index.d.ts" />
