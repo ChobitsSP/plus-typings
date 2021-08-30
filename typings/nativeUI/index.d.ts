@@ -78,6 +78,38 @@ declare namespace plus.nativeUI {
      * 可取值"none"表示截获处理返回键，但不做任何响应；"close"表示截获处理返回键并关闭等待框；"transmit"表示不截获返回键，向后传递给Webview窗口继续处理（与未显示等待框的情况一致）。
      */
     back?: "none" | "close" | "transmit";
+
+    loading?: WaitingLoadingStyles;
+  }
+
+  interface WaitingLoadingStyles {
+    /**
+     * loading图标显示样式
+     * 可取值： "block"表示图标与文字分开两行显示，上面显示loading图标，下面显示文字； "inline"表示loading图标与文字在同一行显示，左边显示loading图标，右边显示文字； "none"表示不显示loading图标；
+     */
+    display?: string;
+
+    /**
+     * 设置loading图标的高度（宽度等比率缩放），取值类型：像素值，如"14px"表示14像素高。
+     */
+    height?: string;
+
+    /**
+     * 自定义loading图标的路径，png格式，并且必须是本地资源地址； loading图要求宽是高的整数倍，显示等待框时按照图片的高横向截取每帧刷新。
+     */
+    icon?: string;
+
+    /**
+     * loading图每帧刷新间隔
+     * 单位为ms（毫秒），默认值为100ms。
+     */
+    interval?: string;
+
+    /**
+     * loading图标类型
+     * 如果设置了icon属性，则优先使用icon自定义图标。 可取值： "circle" - 圆圈类型loading图标； "snow" - 雪花类型loading图标。 默认值为"circle"。
+     */
+    type?: string;
   }
 
   type IndexCallback = (event: { index: number }) => void;
