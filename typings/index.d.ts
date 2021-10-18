@@ -4,6 +4,7 @@
 /// <reference path="./camera/index.d.ts" />
 /// <reference path="./contacts/index.d.ts" />
 /// <reference path="./device/index.d.ts" />
+/// <reference path="./fingerprint/index.d.ts" />
 /// <reference path="./gallery/index.d.ts" />
 /// <reference path="./io/index.d.ts" />
 /// <reference path="./key/index.d.ts" />
