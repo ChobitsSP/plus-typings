@@ -31,8 +31,18 @@ declare namespace plus {
        * 获取客户端接收到的所有推送消息。 仅包括在系统消息中心显示的推送消息，不包括调用setAutoNotification(false)方法设置不显示推送消息后接收到的消息。
        */
       getAllMessage(): plus.push.PushMessage[];
-      getClientInfo(): any;
-      getClientInfoAsync(successCB, errorCB): void;
+
+      /**
+       * 获取客户端推送标识信息
+       */
+      getClientInfo(): plus.push.ClientInfo;
+
+      /**
+       * 异步获取客户端推送标识信息
+       * @param successCB 
+       * @param errorCB 
+       */
+      getClientInfoAsync(successCB: (info: plus.push.ClientInfo) => void, errorCB?: plus.push.ErrorCallback): void;
       setAutoNotification(notify: boolean): void;
       remove(message: plus.push.PushMessage): void;
     };
@@ -123,4 +133,38 @@ declare namespace plus.push {
 
     type: "receive" | "click";
   }
+
+  interface ClientInfo {
+    /**
+     * 目前支持以下推送通道： "igexin" - 表示个推推送； "mipush" - 表示小米推送； "unipush" - 表示DCloud UniPush。
+     */
+    id: string;
+
+    /**
+     * 设备令牌（iOS设备唯一标识），用于APNS服务推送中标识设备的身份
+     */
+    token: string;
+
+    /**
+     * 推送服务令牌（设备唯一标识），用于标识推送信息接收者身份
+     */
+    clientid: string;
+
+    /**
+     * 第三方推送服务的应用标识
+     */
+    appid: string;
+
+    /**
+     * 第三方推送服务器的应用键值
+     */
+    appkey: string;
+  }
+
+  interface Exception {
+    code: number;
+    message: string;
+  }
+
+  type ErrorCallback = (err: Exception) => void;
 }
