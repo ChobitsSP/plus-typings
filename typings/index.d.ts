@@ -16,6 +16,7 @@
 /// <reference path="./push/index.d.ts" />
 /// <reference path="./runtime/index.d.ts" />
 /// <reference path="./share/index.d.ts" />
+/// <reference path="./sqlite/index.d.ts" />
 /// <reference path="./storage/index.d.ts" />
 /// <reference path="./uploader/index.d.ts" />
 /// <reference path="./webview/index.d.ts" />
@@ -40,7 +41,6 @@ declare namespace plus {
     oauth: any;
 
     speech: any;
-    sqlite: any;
     statistic: any;
     android: any;
     ios: any;
