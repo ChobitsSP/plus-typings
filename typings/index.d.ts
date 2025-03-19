@@ -4,6 +4,7 @@
 /// <reference path="./camera/index.d.ts" />
 /// <reference path="./contacts/index.d.ts" />
 /// <reference path="./device/index.d.ts" />
+/// <reference path="./downloader/index.d.ts" />
 /// <reference path="./fingerprint/index.d.ts" />
 /// <reference path="./gallery/index.d.ts" />
 /// <reference path="./io/index.d.ts" />
@@ -19,6 +20,7 @@
 /// <reference path="./sqlite/index.d.ts" />
 /// <reference path="./storage/index.d.ts" />
 /// <reference path="./uploader/index.d.ts" />
+/// <reference path="./video/index.d.ts" />
 /// <reference path="./webview/index.d.ts" />
 /// <reference path="./zip/index.d.ts" />
 
@@ -30,7 +32,6 @@ declare namespace plus {
    */
   interface PlusStatic {
     accelerometer: any;
-    downloader: any;
     geolocation: any;
     nativeObj: any;
     navigator: any;
